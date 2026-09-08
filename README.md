@@ -1,5 +1,7 @@
 # FAIGRI/EAGLE Rank–Gate Benchmark V3
 
+[![benchmark-ci](https://github.com/shaikhamalkawi-ux/faigri-eagle-rank-gate-benchmark-3/actions/workflows/ci.yml/badge.svg)](https://github.com/shaikhamalkawi-ux/faigri-eagle-rank-gate-benchmark-3/actions/workflows/ci.yml)
+
 **Status:** Public benchmark-development repository; DOI release pending.  
 **Scientific baseline:** ITT 2026 Paper 3 R7 development set unchanged.  
 **Prospective extension:** 15 frozen institution–system deployments, coded once by ChatGPT under a protocol amendment made after substantive rules were frozen and before holdout outcomes were written.
@@ -26,7 +28,7 @@ Because direct binary upload through the connected workflow corrupted the compre
 ```bash
 bash release/reconstruct_snapshot.sh /tmp/FAIGRI_EAGLE_PAPER3_RANK_GATE_BENCHMARK_V3.tar.xz
 mkdir -p /tmp/faigri_rank_gate_v3
- tar -xJf /tmp/FAIGRI_EAGLE_PAPER3_RANK_GATE_BENCHMARK_V3.tar.xz -C /tmp/faigri_rank_gate_v3
+tar -xJf /tmp/FAIGRI_EAGLE_PAPER3_RANK_GATE_BENCHMARK_V3.tar.xz -C /tmp/faigri_rank_gate_v3
 ```
 
 The reconstruction script verifies the archive before returning success.
@@ -53,7 +55,7 @@ A successful run ends with:
 PAPER3_RANK_GATE_BENCHMARK_V3_DOI_READY: PASS
 ```
 
-GitHub Actions reconstructs this same hash-verified snapshot and runs the same suite on every push/pull request.
+GitHub Actions reconstructs this same hash-verified snapshot and runs the same suite on every push/pull request. The final public-mirror verification run completed successfully on 2026-09-08.
 
 ## Reuse tasks
 
@@ -73,6 +75,7 @@ See `benchmark/BENCHMARK_TASKS_AND_METRICS.md`.
 - `benchmark/SUBMISSION_TEMPLATE.csv`
 - `release/reconstruct_snapshot.sh`
 - `release/SNAPSHOT_SHA256.txt`
+- `release/BASE64_PARTS_MANIFEST.txt`
 - `CITATION.cff`
 
 ## Scientific boundary
