@@ -1,0 +1,10 @@
+{
+  "observed_gate_exact_accuracy": 1.0,
+  "observed_missing_set_exact_accuracy": 1.0,
+  "observed_missing_set_macro_jaccard": 1.0,
+  "matched_pair_gate_exact_accuracy": 1.0,
+  "pair_invariance_pairs_scored": 11,
+  "pair_invariance_pass_rate": 1.0,
+  "pair_max_abs_rank_delta": 0.0,
+  "rank_tolerance": 1e-12
+}

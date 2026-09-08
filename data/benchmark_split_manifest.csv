@@ -1,0 +1,27 @@
+Case_ID,Split,Use_Class,Gate_state,Empirical_Status,Coding_Status
+C01,development,Campus LLM platform,Hold,Observed public documentary case,Locked R7 development input
+C02,development,ASU ChatGPT Edu,Documented,Observed public documentary case,Locked R7 development input
+C03,development,Khanmigo AI tutor,Documented,Observed public documentary case,Locked R7 development input
+C04,development,Gradescope grading,Hold,Observed public documentary case,Locked R7 development input
+C05,development,AI grading dossier,Hold,Observed public documentary case,Locked R7 development input
+C06,development,AI detection/integrity,Hold,Observed public documentary case,Locked R7 development input
+C07,development,Respondus Monitor,Hold,Observed public documentary case,Locked R7 development input
+C08,development,Proctoring dossier,Hold,Observed public documentary case,Locked R7 development input
+C09,development,Advising chatbot,Hold,Observed public documentary case,Locked R7 development input
+C10,development,AI admission/access,Hold,Observed public documentary case,Locked R7 development input
+C11,development,Admissions counseling RAG,Hold,Observed public documentary case,Locked R7 development input
+H001,prospective_holdout,Campus LLM / GenAI platform,Documented,Observed public documentary case,Frozen-roster single-analyst holdout
+H002,prospective_holdout,Campus LLM / GenAI platform,Hold,Observed public documentary case,Frozen-roster single-analyst holdout
+H003,prospective_holdout,Campus LLM / GenAI platform,Documented,Observed public documentary case,Frozen-roster single-analyst holdout
+H004,prospective_holdout,AI-assisted grading,Hold,Observed public documentary case,Frozen-roster single-analyst holdout
+H005,prospective_holdout,AI-assisted grading,Hold,Observed public documentary case,Frozen-roster single-analyst holdout
+H006,prospective_holdout,AI-assisted grading,Hold,Observed public documentary case,Frozen-roster single-analyst holdout
+H007,prospective_holdout,AI proctoring / integrity,Hold,Observed public documentary case,Frozen-roster single-analyst holdout
+H008,prospective_holdout,AI proctoring / integrity,Hold,Observed public documentary case,Frozen-roster single-analyst holdout
+H009,prospective_holdout,AI proctoring / integrity,Hold,Observed public documentary case,Frozen-roster single-analyst holdout
+H010,prospective_holdout,Admissions / enrollment AI support,Hold,Observed public documentary case,Frozen-roster single-analyst holdout
+H011,prospective_holdout,Admissions / enrollment AI support,Hold,Observed public documentary case,Frozen-roster single-analyst holdout
+H012,prospective_holdout,Admissions / enrollment AI support,Hold,Observed public documentary case,Frozen-roster single-analyst holdout
+H013,prospective_holdout,Advising / student support,Hold,Observed public documentary case,Frozen-roster single-analyst holdout
+H014,prospective_holdout,Advising / student support,Documented,Observed public documentary case,Frozen-roster single-analyst holdout
+H015,prospective_holdout,Advising / student support,Documented,Observed public documentary case,Frozen-roster single-analyst holdout

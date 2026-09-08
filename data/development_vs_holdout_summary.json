@@ -1,0 +1,19 @@
+{
+  "development_set": {
+    "n": 11,
+    "documented": 2,
+    "hold": 9,
+    "fuzzy_crisp_spearman": 0.8606140726545873,
+    "risk_adjusted_crisp_spearman": 0.9266152535574455,
+    "top5_fuzzy_hold_count": 3
+  },
+  "prospective_holdout": {
+    "n": 15,
+    "documented": 4,
+    "hold": 11,
+    "fuzzy_crisp_spearman": 0.6901606081131089,
+    "risk_adjusted_crisp_spearman": 0.7956798902716763,
+    "top5_fuzzy_hold_count": 2
+  },
+  "interpretation": "High/near-high ranking and documentary gate state remain non-equivalent in the prospective set. The sets are bounded non-probability evidence sets; no inferential pooled prevalence or effect-size claim is made."
+}

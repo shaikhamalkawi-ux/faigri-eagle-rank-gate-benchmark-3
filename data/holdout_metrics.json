@@ -1,0 +1,39 @@
+{
+  "protocol_version": "V2 single-analyst prospective holdout",
+  "holdout_cases": 15,
+  "documented_cases": 4,
+  "hold_cases": 11,
+  "applicable_mandatory_rows": 61,
+  "documented_mandatory_rows": 42,
+  "missing_mandatory_rows": 19,
+  "conditional_not_applicable_rows": 2,
+  "fuzzy_crisp_spearman": 0.6901606081131089,
+  "risk_adjusted_crisp_spearman": 0.7956798902716763,
+  "top5_fuzzy_hold_count_deterministic_tiebreak": 2,
+  "top5_fuzzy_case_ids_deterministic_tiebreak": [
+    "H014",
+    "H007",
+    "H008",
+    "H015",
+    "H001"
+  ],
+  "fuzzy_cutoff_closeness": 0.5388130261611306,
+  "fuzzy_cutoff_tie_set": [
+    "H014",
+    "H007",
+    "H008",
+    "H015",
+    "H001",
+    "H003"
+  ],
+  "fuzzy_cutoff_tie_set_hold_count": 2,
+  "nearest_opposite_gate_pair_raw_input_euclidean": {
+    "distance": 0.34641016151377535,
+    "case_a": "H004",
+    "case_b": "H014"
+  },
+  "h": 0.1,
+  "lambda": 0.75,
+  "weights": "equal 1/6 over P,F,T,H,L,r for crisp TOPSIS",
+  "claim_boundary": "Single-analyst prospective documentary evaluation; not independent validation, prevalence estimation, legal compliance, or product safety certification."
+}

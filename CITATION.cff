@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use the FAIGRI/EAGLE Rank–Gate Benchmark, please cite the archived benchmark release and the corresponding paper."
+title: "FAIGRI/EAGLE Rank–Gate Benchmark for Higher-Education AI Procurement"
+version: "3.0-doi-ready-20260908"
+date-released: 2026-09-08
+repository-code: "https://github.com/shaikhamalkawi-ux/faigri-eagle-rank-gate-benchmark-3"
+url: "https://github.com/shaikhamalkawi-ux/faigri-eagle-rank-gate-benchmark-3"
+authors:
+  - family-names: "Malkawi"
+    given-names: "Ghassan"
+  - family-names: "Elsayed"
+    given-names: "Ahmed Abdelaziz"
+  - family-names: "Lataifeh"
+    given-names: "Anas"
+  - family-names: "Muflehi"
+    given-names: "Mohamad"

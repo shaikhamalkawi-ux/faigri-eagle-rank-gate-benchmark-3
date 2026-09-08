@@ -1,0 +1,16 @@
+Case_ID,Institution,Provider_or_System,Use_Class,P,F,T,H,L,r,G,S_lambda,Fuzzy_TOPSIS_CC,Crisp_TOPSIS_CC_reconstructed,Crisp_TOPSIS_rank_reconstructed,Gate_documented,Gate_state,Mandatory_items,Missing_items,Missing_safeguards
+H001,University of Michigan,U-M GPT,Campus LLM / GenAI platform,0.5,0.3,0.7,0.5,0.7,0.55,0.54,0.35747632621305037,0.5388130261611306,0.6490971224416091,3,1,Documented,4,0,
+H002,"University of California, Irvine",ZotGPT Chat,Campus LLM / GenAI platform,0.5,0.3,0.5,0.1,0.7,0.55,0.42000000000000004,0.27803714261015033,0.42391897726125677,0.4960128032072257,10,0,Hold,4,1,Human oversight
+H003,Harvard University,AI Sandbox,Campus LLM / GenAI platform,0.7,0.3,0.5,0.5,0.7,0.55,0.54,0.35747632621305037,0.5388130261611306,0.7315081175278464,1,1,Documented,4,0,
+H004,Stanford University,Gradescope,AI-assisted grading,0.5,0.3,0.5,0.7,0.5,0.7,0.5,0.29577768218340755,0.5,0.6282894917273665,4,0,Hold,4,2,Audit trail | Fairness or bias evidence
+H005,Boston University,Gradescope,AI-assisted grading,0.5,0.3,0.5,0.7,0.5,0.7,0.5,0.29577768218340755,0.5,0.6282894917273665,4,0,Hold,4,2,Audit trail | Fairness or bias evidence
+H006,University of North Dakota,Gradescope,AI-assisted grading,0.5,0.3,0.5,0.7,0.5,0.7,0.5,0.29577768218340755,0.5,0.6282894917273665,4,0,Hold,4,2,Audit trail | Fairness or bias evidence
+H007,University of Iowa,Honorlock,AI proctoring / integrity,0.7,0.1,0.7,0.7,0.5,0.9,0.54,0.2749444671280766,0.5399471388499505,0.5713639280329607,5,0,Hold,5,1,Proportionality assessment
+H008,Case Western Reserve University,Honorlock,AI proctoring / integrity,0.7,0.1,0.5,0.7,0.7,0.9,0.5399999999999999,0.2749444671280765,0.5399471388499505,0.5698389047290281,6,0,Hold,5,1,Proportionality assessment
+H009,Rochester Institute of Technology,Honorlock,AI proctoring / integrity,0.5,0.1,0.7,0.7,0.5,0.9,0.5,0.2545782103037746,0.5012837077377088,0.4977855001601657,9,0,Hold,5,3,Privacy assessment | Proportionality assessment | Cybersecurity and retention evidence
+H010,Western Nebraska Community College,Element451,Admissions / enrollment AI support,0.1,0.1,0.5,0.3,0.5,0.6,0.3,0.19128844548653198,0.30979589606318797,0.22555642885006882,13,0,Hold,3,2,Fairness evidence | Human reconsideration or staff escalation
+H011,Midland College,Element451,Admissions / enrollment AI support,0.9,0.1,0.5,0.1,0.7,0.9,0.45999999999999996,0.2342119534794726,0.46286893930564454,0.4990112199366109,8,0,Hold,4,3,Fairness evidence | Human reconsideration or staff escalation | Legal review if used for access decisions
+H012,New York University,NYUAdmissionsBot,Admissions / enrollment AI support,0.3,0.1,0.5,0.7,0.5,0.6,0.42000000000000004,0.2678038236811448,0.4239189772612567,0.4409569086833995,12,0,Hold,3,1,Fairness evidence
+H013,"University of California, Los Angeles",BruinChat,Advising / student support,0.3,0.3,0.5,0.3,0.5,0.5,0.38,0.2611699259405694,0.3835609215166081,0.4567488744728756,11,0,Hold,4,1,Escalation to staff
+H014,University of Maryland,UMD Virtual Agents / advising agent,Advising / student support,0.5,0.3,0.7,0.7,0.7,0.5,0.5800000000000001,0.39862778169876395,0.5775891524319718,0.7000107730620935,2,1,Documented,4,0,
+H015,University of Houston,Shasta Chatbot,Advising / student support,0.5,0.1,0.7,0.7,0.7,0.5,0.5399999999999999,0.371136210547125,0.5399471388499505,0.5636971743639344,7,1,Documented,4,0,

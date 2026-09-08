@@ -1,0 +1,49 @@
+Record_ID,Record_Type,Gate_State,Missing_Safeguards
+C01,observed_case,Hold,Human oversight || Institutional use policy || Restricted-use boundaries
+C02,observed_case,Documented,
+C03,observed_case,Documented,
+C04,observed_case,Hold,Audit trail || Fairness or bias evidence || Human appeal
+C05,observed_case,Hold,Audit trail || Documented instructor-override protocol || Fairness or bias evidence || Human appeal
+C06,observed_case,Hold,Appeal pathway || Student contestability
+C07,observed_case,Hold,Contestability || Human review || Proportionality assessment
+C08,observed_case,Hold,Contestability || Proportionality assessment
+C09,observed_case,Hold,Escalation to staff || Institutional accountability || Privacy policy
+C10,observed_case,Hold,Appeal or human reconsideration || Explainability || Legal review
+C11,observed_case,Hold,Fairness evidence || Human reconsideration || Legal review if used for access decisions
+H001,observed_case,Documented,
+H002,observed_case,Hold,Human oversight
+H003,observed_case,Documented,
+H004,observed_case,Hold,Audit trail || Fairness or bias evidence
+H005,observed_case,Hold,Audit trail || Fairness or bias evidence
+H006,observed_case,Hold,Audit trail || Fairness or bias evidence
+H007,observed_case,Hold,Proportionality assessment
+H008,observed_case,Hold,Proportionality assessment
+H009,observed_case,Hold,Cybersecurity and retention evidence || Privacy assessment || Proportionality assessment
+H010,observed_case,Hold,Fairness evidence || Human reconsideration or staff escalation
+H011,observed_case,Hold,Fairness evidence || Human reconsideration or staff escalation || Legal review if used for access decisions
+H012,observed_case,Hold,Fairness evidence
+H013,observed_case,Hold,Escalation to staff
+H014,observed_case,Documented,
+H015,observed_case,Documented,
+MP_C01::Observed,matched_pair_member,Hold,
+MP_C01::Counterfactual,matched_pair_member,Documented,
+MP_C02::Observed,matched_pair_member,Documented,
+MP_C02::Counterfactual,matched_pair_member,Hold,
+MP_C03::Observed,matched_pair_member,Documented,
+MP_C03::Counterfactual,matched_pair_member,Hold,
+MP_C04::Observed,matched_pair_member,Hold,
+MP_C04::Counterfactual,matched_pair_member,Documented,
+MP_C05::Observed,matched_pair_member,Hold,
+MP_C05::Counterfactual,matched_pair_member,Documented,
+MP_C06::Observed,matched_pair_member,Hold,
+MP_C06::Counterfactual,matched_pair_member,Documented,
+MP_C07::Observed,matched_pair_member,Hold,
+MP_C07::Counterfactual,matched_pair_member,Documented,
+MP_C08::Observed,matched_pair_member,Hold,
+MP_C08::Counterfactual,matched_pair_member,Documented,
+MP_C09::Observed,matched_pair_member,Hold,
+MP_C09::Counterfactual,matched_pair_member,Documented,
+MP_C10::Observed,matched_pair_member,Hold,
+MP_C10::Counterfactual,matched_pair_member,Documented,
+MP_C11::Observed,matched_pair_member,Hold,
+MP_C11::Counterfactual,matched_pair_member,Documented,

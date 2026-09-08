@@ -1,0 +1,16 @@
+Case_ID,Institution,Provider_or_System,Use_Class,P,F,T,H,L,r,Role_Classification_Note,Coding_Operator,Coding_Date,Criterion_Codebook
+H001,University of Michigan,U-M GPT,Campus LLM / GenAI platform,0.5,0.3,0.7,0.5,0.7,0.55,Fixed by use class,ChatGPT single analyst,2026-09-08,PROSPECTIVE_CRITERION_CODEBOOK_V1
+H002,"University of California, Irvine",ZotGPT Chat,Campus LLM / GenAI platform,0.5,0.3,0.5,0.1,0.7,0.55,Fixed by use class,ChatGPT single analyst,2026-09-08,PROSPECTIVE_CRITERION_CODEBOOK_V1
+H003,Harvard University,AI Sandbox,Campus LLM / GenAI platform,0.7,0.3,0.5,0.5,0.7,0.55,Fixed by use class,ChatGPT single analyst,2026-09-08,PROSPECTIVE_CRITERION_CODEBOOK_V1
+H004,Stanford University,Gradescope,AI-assisted grading,0.5,0.3,0.5,0.7,0.5,0.7,Fixed by use class,ChatGPT single analyst,2026-09-08,PROSPECTIVE_CRITERION_CODEBOOK_V1
+H005,Boston University,Gradescope,AI-assisted grading,0.5,0.3,0.5,0.7,0.5,0.7,Fixed by use class,ChatGPT single analyst,2026-09-08,PROSPECTIVE_CRITERION_CODEBOOK_V1
+H006,University of North Dakota,Gradescope,AI-assisted grading,0.5,0.3,0.5,0.7,0.5,0.7,Fixed by use class,ChatGPT single analyst,2026-09-08,PROSPECTIVE_CRITERION_CODEBOOK_V1
+H007,University of Iowa,Honorlock,AI proctoring / integrity,0.7,0.1,0.7,0.7,0.5,0.9,Fixed by use class,ChatGPT single analyst,2026-09-08,PROSPECTIVE_CRITERION_CODEBOOK_V1
+H008,Case Western Reserve University,Honorlock,AI proctoring / integrity,0.7,0.1,0.5,0.7,0.7,0.9,Fixed by use class,ChatGPT single analyst,2026-09-08,PROSPECTIVE_CRITERION_CODEBOOK_V1
+H009,Rochester Institute of Technology,Honorlock,AI proctoring / integrity,0.5,0.1,0.7,0.7,0.5,0.9,Fixed by use class,ChatGPT single analyst,2026-09-08,PROSPECTIVE_CRITERION_CODEBOOK_V1
+H010,Western Nebraska Community College,Element451,Admissions / enrollment AI support,0.1,0.1,0.5,0.3,0.5,0.6,Advisory/information/enrollment-support role; no direct scoring/ranking/screening evidence admitted,ChatGPT single analyst,2026-09-08,PROSPECTIVE_CRITERION_CODEBOOK_V1
+H011,Midland College,Element451,Admissions / enrollment AI support,0.9,0.1,0.5,0.1,0.7,0.9,Consequential access/admission role: public board packet documents fraud-detection tools identifying potentially fraudulent applications,ChatGPT single analyst,2026-09-08,PROSPECTIVE_CRITERION_CODEBOOK_V1
+H012,New York University,NYUAdmissionsBot,Admissions / enrollment AI support,0.3,0.1,0.5,0.7,0.5,0.6,Advisory/information role; bot answers questions and escalates when unable to answer,ChatGPT single analyst,2026-09-08,PROSPECTIVE_CRITERION_CODEBOOK_V1
+H013,"University of California, Los Angeles",BruinChat,Advising / student support,0.3,0.3,0.5,0.3,0.5,0.5,Fixed by use class,ChatGPT single analyst,2026-09-08,PROSPECTIVE_CRITERION_CODEBOOK_V1
+H014,University of Maryland,UMD Virtual Agents / advising agent,Advising / student support,0.5,0.3,0.7,0.7,0.7,0.5,Fixed by use class,ChatGPT single analyst,2026-09-08,PROSPECTIVE_CRITERION_CODEBOOK_V1
+H015,University of Houston,Shasta Chatbot,Advising / student support,0.5,0.1,0.7,0.7,0.7,0.5,Fixed by use class,ChatGPT single analyst,2026-09-08,PROSPECTIVE_CRITERION_CODEBOOK_V1

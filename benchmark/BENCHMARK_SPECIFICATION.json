@@ -1,0 +1,73 @@
+{
+  "benchmark_name": "FAIGRI/EAGLE Rank–Gate Benchmark for Higher-Education AI Procurement",
+  "version": "3.0-doi-ready-20260908",
+  "scientific_baseline": "ITT 2026 Paper 3 R7 development set unchanged",
+  "observed_cases": 26,
+  "splits": {
+    "development": 11,
+    "prospective_holdout_single_analyst": 15
+  },
+  "rank_inputs": [
+    "P",
+    "F",
+    "T",
+    "H",
+    "L",
+    "r"
+  ],
+  "benefit_criteria": [
+    "P",
+    "F",
+    "T",
+    "H",
+    "L"
+  ],
+  "cost_criteria": [
+    "r"
+  ],
+  "crisp_topsis": {
+    "normalization": "vector",
+    "weights": "equal 1/6",
+    "distance": "Euclidean",
+    "rank_ties": "dense"
+  },
+  "fuzzy_topsis": {
+    "representation": "triangular around each benefit criterion",
+    "h": 0.1,
+    "weights": "0.2 each over P,F,T,H,L",
+    "vertex_distance": "sqrt(mean squared vertex difference)",
+    "risk_not_in_fuzzy_cc": true
+  },
+  "risk_adjusted_score": {
+    "formula": "G*exp(-lambda*r)",
+    "G": "mean(P,F,T,H,L)",
+    "lambda": 0.75
+  },
+  "documentary_gate": {
+    "formula": "V_i = product_j m_ij over applicable mandatory safeguards",
+    "states": {
+      "1": "Documented",
+      "0": "Hold"
+    },
+    "missing_evidence_interpretation": "documentary missingness only"
+  },
+  "conformance_suite": {
+    "pairs": 11,
+    "observed_pairs": 1,
+    "synthetic_counterfactual_pairs": 10,
+    "requirement": "rank-only outputs must remain invariant within a matched pair while documentary gate may differ"
+  },
+  "primary_reuse_tasks": [
+    "rank-only invariance",
+    "documentary gate reproduction",
+    "missing-safeguard localization",
+    "split-wise ranking reproduction"
+  ],
+  "claim_boundaries": [
+    "not legal compliance",
+    "not safety certification",
+    "not prevalence estimation",
+    "not product ranking",
+    "holdout is single-analyst and not independent validation"
+  ]
+}

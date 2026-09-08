@@ -1,0 +1,12 @@
+Case_ID,Use,P,F,T,H,L,r
+C01,Campus LLM platform,0.8,0.5,0.5,0.5,0.7,0.55
+C02,ASU ChatGPT Edu,0.8,0.5,0.5,0.5,0.7,0.55
+C03,Khanmigo AI tutor,0.7,0.5,0.5,0.7,0.5,0.4
+C04,Gradescope grading,0.5,0.5,0.7,0.8,0.5,0.7
+C05,AI grading dossier,0.3,0.5,0.7,0.7,0.3,0.7
+C06,AI detection/integrity,0.5,0.3,0.7,0.5,0.5,0.7
+C07,Respondus Monitor,0.8,0.3,0.5,0.5,0.7,0.9
+C08,Proctoring dossier,0.7,0.3,0.5,0.3,0.5,0.9
+C09,Advising chatbot,0.3,0.5,0.5,0.7,0.3,0.5
+C10,AI admission/access,0.5,0.5,0.7,0.3,0.3,0.9
+C11,Admissions counseling RAG,0.3,0.3,0.7,0.5,0.3,0.6
