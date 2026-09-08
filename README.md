@@ -29,7 +29,7 @@ SHA-256:
 
 `a170e43efb3cc193ca6ce031c4a2d76f2a6a26520bd48062a69b043ca965717b`
 
-The archive contains the full V3 data, protocol, provenance, validator, benchmark-scoring, schemas, tests, examples, metadata, and documentation tree. The key reusable tables are also being exposed directly in the repository.
+The archive contains the full V3 data, protocol, provenance, validator, benchmark-scoring, schemas, tests, examples, metadata, and documentation tree. The key reusable tables are also exposed directly in the repository.
 
 ## One-command verification
 
