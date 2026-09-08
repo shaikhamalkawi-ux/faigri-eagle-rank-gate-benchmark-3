@@ -21,21 +21,28 @@ The two observed splits remain analytically separate; do not pool them for vecto
 
 ## Complete public snapshot
 
-The repository contains a compressed complete benchmark snapshot at:
+Because direct binary upload through the connected workflow corrupted the compressed archive, the exact complete V3 snapshot is stored losslessly as five Base64 text parts under `release/base64/`. Reconstruct it with:
 
-`release/FAIGRI_EAGLE_PAPER3_RANK_GATE_BENCHMARK_V3_GITHUB_PUBLIC_SNAPSHOT_20260908.tar.xz`
+```bash
+bash release/reconstruct_snapshot.sh /tmp/FAIGRI_EAGLE_PAPER3_RANK_GATE_BENCHMARK_V3.tar.xz
+mkdir -p /tmp/faigri_rank_gate_v3
+ tar -xJf /tmp/FAIGRI_EAGLE_PAPER3_RANK_GATE_BENCHMARK_V3.tar.xz -C /tmp/faigri_rank_gate_v3
+```
 
-SHA-256:
+The reconstruction script verifies the archive before returning success.
+
+Expected SHA-256:
 
 `a170e43efb3cc193ca6ce031c4a2d76f2a6a26520bd48062a69b043ca965717b`
 
-The archive contains the full V3 data, protocol, provenance, validator, benchmark-scoring, schemas, tests, examples, metadata, and documentation tree. The key reusable tables are also exposed directly in the repository.
+The archive contains the full V3 data, protocol, provenance, validator, benchmark scoring, schemas, tests, examples, metadata, and documentation tree. Key reusable tables are also exposed directly in the repository.
 
 ## One-command verification
 
 After extracting the complete snapshot:
 
 ```bash
+cd /tmp/faigri_rank_gate_v3
 python -m pip install -r requirements.txt
 bash run_all.sh
 ```
@@ -45,6 +52,8 @@ A successful run ends with:
 ```text
 PAPER3_RANK_GATE_BENCHMARK_V3_DOI_READY: PASS
 ```
+
+GitHub Actions reconstructs this same hash-verified snapshot and runs the same suite on every push/pull request.
 
 ## Reuse tasks
 
@@ -62,6 +71,8 @@ See `benchmark/BENCHMARK_TASKS_AND_METRICS.md`.
 - `data/benchmark_split_manifest.csv`
 - `benchmark/GROUND_TRUTH_GATE_AND_MISSING.csv`
 - `benchmark/SUBMISSION_TEMPLATE.csv`
+- `release/reconstruct_snapshot.sh`
+- `release/SNAPSHOT_SHA256.txt`
 - `CITATION.cff`
 
 ## Scientific boundary
