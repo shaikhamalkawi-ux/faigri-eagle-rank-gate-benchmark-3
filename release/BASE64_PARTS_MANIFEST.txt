@@ -1,0 +1,15 @@
+FAIGRI/EAGLE Rank–Gate Benchmark V3 — Base64 snapshot parts
+
+part_00.b64  git_blob=760b326502b93d956bf1646fc352e5f6042fbd2c  chars=16000
+part_01.b64  git_blob=d01b4b9ccf87e5dcc8e888f0ff1e0d1e14ab4403  chars=16000
+part_02.b64  git_blob=71c4f39530652f1cd21e30911eef3506bdef0060  chars=16000
+part_03.b64  git_blob=c552afb7c0646cf047fe1357b3aae2a514e2bb87  chars=16000
+part_04.b64  git_blob=62713bba3a769036b74803bca715b52e6b93f192  chars=12396
+
+Concatenated Base64 text SHA-256:
+669409a97f0396388829397134403c2380432ddd5456356206d561dc689873b4
+
+Reconstructed TAR.XZ SHA-256:
+a170e43efb3cc193ca6ce031c4a2d76f2a6a26520bd48062a69b043ca965717b
+
+The repository reconstruction script verifies the reconstructed archive SHA-256 and XZ integrity before reporting PASS.
