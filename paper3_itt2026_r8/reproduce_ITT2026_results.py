@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 """Paper 3 ITT 2026 R8 - paper-specific aligned crisp/fuzzy replay.
 
-Run from paper3_itt2026_r8/ inside the public benchmark repository.
+Run from paper3_itt2026_r8/ inside the public benchmark repository. If the frozen
+baseline tables are not exposed directly at repository root, the script reconstructs
+the repository's hash-verified complete snapshot and reads them from that snapshot.
 """
 from pathlib import Path
 import json
+import subprocess
+import tarfile
+import tempfile
 import numpy as np
 import pandas as pd
 from scipy.stats import spearmanr
@@ -12,12 +17,32 @@ import matplotlib.pyplot as plt
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
-BASE_CASES = REPO / "data" / "baseline_case_inputs.csv"
-PUBLIC_ROWS = REPO / "data" / "mandatory_safeguards_46.csv"
 SYNTH_ROWS = HERE / "synthetic_sensitivity_rows_4.csv"
 CRITERIA = ["P", "F", "T", "H", "L"]
 ALL = CRITERIA + ["r"]
 LAMBDA = 0.75
+
+
+def locate_data_root():
+    direct_case = REPO / "data" / "baseline_case_inputs.csv"
+    direct_rows = REPO / "data" / "mandatory_safeguards_46.csv"
+    if direct_case.exists() and direct_rows.exists():
+        return REPO
+    reconstruct = REPO / "release" / "reconstruct_snapshot.sh"
+    if not reconstruct.exists():
+        raise FileNotFoundError("Neither direct frozen data tables nor release/reconstruct_snapshot.sh are available")
+    tmp = Path(tempfile.mkdtemp(prefix="paper3_r8_"))
+    archive = tmp / "benchmark.tar.xz"
+    snapshot = tmp / "snapshot"
+    snapshot.mkdir()
+    subprocess.run(["bash", str(reconstruct), str(archive)], check=True)
+    with tarfile.open(archive, mode="r:xz") as tf:
+        tf.extractall(snapshot)
+    if not (snapshot / "data" / "baseline_case_inputs.csv").exists():
+        raise FileNotFoundError("Reconstructed snapshot does not contain baseline_case_inputs.csv")
+    if not (snapshot / "data" / "mandatory_safeguards_46.csv").exists():
+        raise FileNotFoundError("Reconstructed snapshot does not contain mandatory_safeguards_46.csv")
+    return snapshot
 
 
 def dense_rank_desc(values):
@@ -69,8 +94,9 @@ def family(label):
 
 
 def main():
-    df = pd.read_csv(BASE_CASES).rename(columns={"Case_ID":"Case"})
-    pub = pd.read_csv(PUBLIC_ROWS)
+    data_root = locate_data_root()
+    df = pd.read_csv(data_root / "data" / "baseline_case_inputs.csv").rename(columns={"Case_ID":"Case"})
+    pub = pd.read_csv(data_root / "data" / "mandatory_safeguards_46.csv")
     syn = pd.read_csv(SYNTH_ROWS)
     gate = pub.groupby("Case_ID")["m_ij"].apply(lambda x: int((x == 1).all())).to_dict()
     df["Gate_documented"] = df["Case"].map(gate).astype(int)
