@@ -13,13 +13,27 @@ Relative ranking and mandatory documentary clearance are different decision obje
 - **11 locked development cases:** 2 Documented / 9 Hold.
 - **15 frozen prospective holdout cases:** 4 Documented / 11 Hold.
 - **26 observed cases total** in `data/observed_cases_26.csv`.
-- **107 applicable mandatory documentary rows** in `data/observed_mandatory_rows_107.csv`.
+- **107 applicable mandatory documentary rows** in the complete snapshot archive.
 - **11 matched rank–gate pairs:** 1 observed pair plus 10 explicitly synthetic counterfactual software tests.
-- Missing-evidence certificates and source provenance.
+- Missing-evidence certificates and source provenance are included in the complete snapshot archive.
 
 The two observed splits remain analytically separate; do not pool them for vector-normalized TOPSIS ranking.
 
+## Complete public snapshot
+
+The repository contains a compressed complete benchmark snapshot at:
+
+`release/FAIGRI_EAGLE_PAPER3_RANK_GATE_BENCHMARK_V3_GITHUB_PUBLIC_SNAPSHOT_20260908.tar.xz`
+
+SHA-256:
+
+`a170e43efb3cc193ca6ce031c4a2d76f2a6a26520bd48062a69b043ca965717b`
+
+The archive contains the full V3 data, protocol, provenance, validator, benchmark-scoring, schemas, tests, examples, metadata, and documentation tree. The key reusable tables are also being exposed directly in the repository.
+
 ## One-command verification
+
+After extracting the complete snapshot:
 
 ```bash
 python -m pip install -r requirements.txt
@@ -41,27 +55,14 @@ See `benchmark/BENCHMARK_TASKS_AND_METRICS.md`.
 3. missing-safeguard localization;
 4. split-wise ranking reproduction.
 
-## Minimal example
-
-```bash
-python validator/rank_gate_validator.py \
-  --cases examples/minimal_dossier/criteria.csv \
-  --safeguards examples/minimal_dossier/mandatory_safeguards.csv \
-  --out examples/minimal_dossier/results.csv
-```
-
 ## Key files
 
 - `benchmark/BENCHMARK_SPECIFICATION.json`
-- `metadata/DATA_DICTIONARY.csv`
 - `data/observed_cases_26.csv`
-- `data/observed_mandatory_rows_107.csv`
 - `data/benchmark_split_manifest.csv`
-- `data/rank_gate_conformance_pairs_11.csv`
-- `benchmark/score_submission.py`
-- `validator/rank_gate_validator.py`
-- `source_provenance/holdout/holdout_source_evidence_ledger.csv`
-- `source_provenance/holdout/holdout_criterion_evidence_ledger.csv`
+- `benchmark/GROUND_TRUTH_GATE_AND_MISSING.csv`
+- `benchmark/SUBMISSION_TEMPLATE.csv`
+- `CITATION.cff`
 
 ## Scientific boundary
 
