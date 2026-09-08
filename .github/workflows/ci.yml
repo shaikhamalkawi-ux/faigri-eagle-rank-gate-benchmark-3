@@ -22,3 +22,5 @@ jobs:
       - name: Run full reproducibility and conformance suite
         working-directory: _snapshot
         run: bash run_all.sh
+      - name: Run Paper 3 ITT 2026 R8 paper-specific replay
+        run: python paper3_itt2026_r8/reproduce_ITT2026_results.py
