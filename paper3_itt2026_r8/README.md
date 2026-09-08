@@ -17,4 +17,4 @@ Expected final line:
 PAPER3_ITT2026_R8_REPRODUCTION: PASS
 ```
 
-The script reads the repository's frozen `data/baseline_case_inputs.csv` and `data/mandatory_safeguards_46.csv`, adds the four protocol stress-test rows stored here, and reproduces the R8 paper tables/figure.
+The replay script automatically reconstructs the repository's hash-verified frozen benchmark snapshot when the underlying baseline tables are not exposed directly at repository root. It then reads the 11 frozen case inputs and 46 public mandatory-safeguard rows, adds the four protocol stress-test rows stored here, and reproduces the R8 paper tables and figure.
