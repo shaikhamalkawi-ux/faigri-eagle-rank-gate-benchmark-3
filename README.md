@@ -2,7 +2,7 @@
 
 [![benchmark-ci](https://github.com/shaikhamalkawi-ux/faigri-eagle-rank-gate-benchmark-3/actions/workflows/ci.yml/badge.svg)](https://github.com/shaikhamalkawi-ux/faigri-eagle-rank-gate-benchmark-3/actions/workflows/ci.yml)
 
-**Status:** Public benchmark-development repository; DOI release pending.  
+**Status:** Active public GitHub benchmark repository.  
 **Scientific baseline:** ITT 2026 Paper 3 R7 development set unchanged.  
 **Prospective extension:** 15 frozen institution–system deployments, coded once by ChatGPT under a protocol amendment made after substantive rules were frozen and before holdout outcomes were written.
 
@@ -55,7 +55,9 @@ A successful run ends with:
 PAPER3_RANK_GATE_BENCHMARK_V3_DOI_READY: PASS
 ```
 
-GitHub Actions reconstructs this same hash-verified snapshot and runs the same suite on every push/pull request. The final public-mirror verification run completed successfully on 2026-09-08.
+The historical PASS token is retained for byte-stable reproducibility naming; GitHub is the active public dissemination endpoint and no DOI deposit is planned at this stage.
+
+GitHub Actions reconstructs this same hash-verified snapshot and runs the same suite on every push/pull request. The public-mirror verification run completed successfully on 2026-09-08.
 
 ## Reuse tasks
 
@@ -77,6 +79,21 @@ See `benchmark/BENCHMARK_TASKS_AND_METRICS.md`.
 - `release/SNAPSHOT_SHA256.txt`
 - `release/BASE64_PARTS_MANIFEST.txt`
 - `CITATION.cff`
+- `LICENSES.md`
+
+## Licensing
+
+- **Code:** MIT License — see `LICENSE_CODE_MIT.txt`.
+- **Original benchmark data, documentation, tables, figures, schemas/specifications and derived non-code artifacts:** CC BY 4.0 — see `LICENSE_DATA_DOCS_FIGURES_CC_BY_4.0.md`.
+- **Third-party sources:** not redistributed or relicensed; rights remain with the original rights holders.
+
+See `LICENSES.md` for the artifact-level license map.
+
+## Citation
+
+Use `CITATION.cff` for repository citation and cite the corresponding paper where appropriate. The canonical repository URL is:
+
+https://github.com/shaikhamalkawi-ux/faigri-eagle-rank-gate-benchmark-3
 
 ## Scientific boundary
 
@@ -84,4 +101,4 @@ This is not a legal-compliance engine, safety certification, prevalence estimato
 
 ## Public release boundary
 
-This GitHub repository is publicly accessible at the author team’s direction. No reuse license has yet been selected, so no permission beyond applicable law is granted by this repository. Third-party source materials are not redistributed. A versioned DOI release and explicit code/data licenses remain pending.
+This GitHub repository is the active public benchmark endpoint selected by the author team. Reuse is governed by the MIT and CC BY 4.0 licenses described above. Third-party source materials are not redistributed or relicensed.
