@@ -1,0 +1,24 @@
+# Package QA — V3 DOI-ready
+
+- Scientific role: reuse/DOI production extension only; R7 development science and V2 holdout coding unchanged.
+- V2→V3 locked scientific files byte-identical: **19/19 PASS**.
+- Observed benchmark cases: **26** = 11 development + 15 prospective holdout.
+- Observed documentary states: **6 Documented / 20 Hold** across two bounded non-probability evidence sets; not pooled prevalence.
+- Applicable mandatory rows: **107**.
+- Holdout criterion evidence rows: **75 = 15×5**.
+- Combined public-source ledger rows: **62**.
+- Conformance suite: **11 pairs** = 1 observed + 10 explicitly synthetic counterfactual software tests.
+- Example submission observed gate exact accuracy: **1.000**.
+- Example submission missing-set exact accuracy: **1.000**.
+- Example submission missing-set macro Jaccard: **1.000**.
+- Example submission matched-pair gate accuracy: **1.000**.
+- Example submission pair-invariance pass rate: **1.000**; max rank delta **0**.
+- In-place `bash run_all.sh`: **PASS**.
+- Positive holdout mandatory rows retain public source URL: **42/42 PASS**.
+- Holdout criterion source-ID referential integrity: **PASS**.
+- Fresh-extraction manifest verification: **PASS**.
+- Fresh-extraction `bash run_all.sh`: **PASS**.
+- Post-rerun manifest verification: **PASS**.
+- Anonymous-review text identity scan for author names: **0 hits PASS**.
+- Public release license: **PENDING AUTHOR SELECTION**.
+- Public GitHub development release during double-blind review: **AUTHORIZED BY AUTHOR TEAM on 2026-09-08**; DOI/license release remains pending.
