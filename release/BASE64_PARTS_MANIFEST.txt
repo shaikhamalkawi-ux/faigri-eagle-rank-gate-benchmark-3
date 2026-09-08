@@ -12,4 +12,4 @@ Concatenated Base64 text SHA-256:
 Reconstructed TAR.XZ SHA-256:
 a170e43efb3cc193ca6ce031c4a2d76f2a6a26520bd48062a69b043ca965717b
 
-The repository reconstruction script verifies the reconstructed archive SHA-256 and XZ integrity before reporting PASS.
+All five part blobs were re-read from the public default branch after upload and matched the expected Git blob identities listed above. The repository reconstruction script verifies the reconstructed archive SHA-256 and XZ integrity before reporting PASS.
