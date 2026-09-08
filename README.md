@@ -21,6 +21,23 @@ Relative ranking and mandatory documentary clearance are different decision obje
 
 The two observed splits remain analytically separate; do not pool them for vector-normalized TOPSIS ranking.
 
+## ITT 2026 Paper 3 frozen replay
+
+The conference-paper calculation is isolated in [`paper3_itt2026_r8/`](paper3_itt2026_r8/). It reproduces the **11-case paper only** and does not pool the later 15-case holdout into its TOPSIS normalizers, correlations, gate counts, or figure. R8 aligns the crisp and fuzzy comparison on the same six inputs, normalizers, equal comparator weights, and ideal points; only the five documentary scores are fuzzified, while risk remains degenerate. The replay verifies exact crisp recovery at `h=0` and the reported R8 sensitivity results.
+
+From that directory:
+
+```bash
+python -m pip install -r requirements.txt
+python reproduce_ITT2026_results.py
+```
+
+Expected final line:
+
+```text
+PAPER3_ITT2026_R8_REPRODUCTION: PASS
+```
+
 ## Complete public snapshot
 
 Because direct binary upload through the connected workflow corrupted the compressed archive, the exact complete V3 snapshot is stored losslessly as five Base64 text parts under `release/base64/`. Reconstruct it with:
@@ -75,6 +92,7 @@ See `benchmark/BENCHMARK_TASKS_AND_METRICS.md`.
 - `data/benchmark_split_manifest.csv`
 - `benchmark/GROUND_TRUTH_GATE_AND_MISSING.csv`
 - `benchmark/SUBMISSION_TEMPLATE.csv`
+- `paper3_itt2026_r8/reproduce_ITT2026_results.py`
 - `release/reconstruct_snapshot.sh`
 - `release/SNAPSHOT_SHA256.txt`
 - `release/BASE64_PARTS_MANIFEST.txt`
