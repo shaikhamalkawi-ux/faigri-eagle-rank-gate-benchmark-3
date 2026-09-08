@@ -10,10 +10,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Extract complete benchmark snapshot
+      - name: Reconstruct complete benchmark snapshot
         run: |
+          chmod +x release/reconstruct_snapshot.sh
+          release/reconstruct_snapshot.sh /tmp/benchmark.tar.xz
           mkdir -p _snapshot
-          tar -xJf release/FAIGRI_EAGLE_PAPER3_RANK_GATE_BENCHMARK_V3_GITHUB_PUBLIC_SNAPSHOT_20260908.tar.xz -C _snapshot
+          tar -xJf /tmp/benchmark.tar.xz -C _snapshot
       - name: Install dependencies
         working-directory: _snapshot
         run: python -m pip install -r requirements.txt
