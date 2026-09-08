@@ -1,0 +1,5 @@
+Case_ID,Case_Name,Case_Type,Use_Case,Safeguard_ID,Mandatory_Safeguard,m_ij,Documentation_Status,Case_Source_ID,Missingness_Category
+C12,Generic LLM assessment feedback assistant,Protocol stress-test,LLM assessment support,C12-M01,Hallucination testing,0,Protocol-withheld by design,PROTOCOL,Protocol-withheld synthetic condition
+C12,Generic LLM assessment feedback assistant,Protocol stress-test,LLM assessment support,C12-M02,Attribution policy,0,Protocol-withheld by design,PROTOCOL,Protocol-withheld synthetic condition
+C12,Generic LLM assessment feedback assistant,Protocol stress-test,LLM assessment support,C12-M03,Human validation workflow,0,Protocol-withheld by design,PROTOCOL,Protocol-withheld synthetic condition
+C12,Generic LLM assessment feedback assistant,Protocol stress-test,LLM assessment support,C12-M04,Assessment-use restrictions,0,Protocol-withheld by design,PROTOCOL,Protocol-withheld synthetic condition
